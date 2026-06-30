@@ -93,7 +93,7 @@ to decide *what* they want; Paula handles everything else.
 
 ### Demo Video
 
-_Link: <paste your YouTube (Unlisted) or Drive link here>_
+_Link: <https://drive.google.com/file/d/1nkLot7iPQwS8BizbsHVCRrl3jYTJZZiw/view?usp=sharing>_
 
 The recording walks through the deployed app end-to-end on the live URL:
 sign in with Google → state a goal in plain language → Paula decomposes it into
