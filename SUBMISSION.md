@@ -5,6 +5,7 @@
 
 **Deployed app (Google Cloud / Cloud Run):** https://paula-uvfakv267q-uc.a.run.app
 **GitHub repository:** https://github.com/Sarath-Narendra/paula
+**Demo video:** _<paste your YouTube (Unlisted) or Drive link here>_
 
 > Accessing the live app: sign-in uses Google OAuth with the Google Calendar
 > scope, so the app is in Google's "Testing" mode (required while the sensitive
@@ -87,6 +88,18 @@ to decide *what* they want; Paula handles everything else.
 - **Cloud Build** — builds and deploys the container image to Cloud Run.
 - **Cloud Scheduler** — triggers autonomous background rescheduling and reminder
   escalation.
+
+---
+
+### Demo Video
+
+_Link: <paste your YouTube (Unlisted) or Drive link here>_
+
+The recording walks through the deployed app end-to-end on the live URL:
+sign in with Google → state a goal in plain language → Paula decomposes it into
+ordered subtasks → the scheduler places them into real Google Calendar free time
+→ the events appear in Google Calendar → the Commitment Confidence score reports
+how likely the plan is to finish on time.
 
 ---
 
