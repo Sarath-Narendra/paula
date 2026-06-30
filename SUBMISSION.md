@@ -3,6 +3,14 @@
 > Paste this into a Google Doc, set sharing to "Anyone with the link can view,"
 > and submit the link on BlockseBlock. (See `rules.md` for all requirements.)
 
+**Deployed app (Google Cloud / Cloud Run):** https://paula-uvfakv267q-uc.a.run.app
+**GitHub repository:** https://github.com/Sarath-Narendra/paula
+
+> Accessing the live app: sign-in uses Google OAuth with the Google Calendar
+> scope, so the app is in Google's "Testing" mode (required while the sensitive
+> Calendar scope is unverified). A reviewer's Google email can be whitelisted as
+> a test user on request to try the full flow.
+
 ---
 
 ## Problem Statement Selected
@@ -66,20 +74,19 @@ to decide *what* they want; Paula handles everything else.
 
 ## Google Technologies Utilized
 
-- **Gemini API** (`@google/genai`) — task decomposition & effort estimation
-  (`gemini-2.5-pro`), the conversational function-calling agent and
-  recommendation narration (`gemini-2.5-flash`).
+- **Gemini API** (`@google/genai`) — task decomposition & effort estimation, the
+  conversational function-calling agent, and recommendation narration
+  (`gemini-2.5-flash`).
 - **Google Calendar API** — free/busy queries and event create/update/delete;
   Paula reads availability and writes scheduled work blocks.
 - **Google Identity / OAuth 2.0** — authentication and Calendar authorization
   with offline access (refresh tokens for autonomous background actions).
 - **Cloud Firestore** — users, tasks, subtasks, schedule blocks, reminders,
   activity feed, and Group Spaces.
-- **Cloud Run** — hosts the deployed application.
+- **Cloud Run** — hosts the deployed application (containerized, scale-to-zero).
+- **Cloud Build** — builds and deploys the container image to Cloud Run.
 - **Cloud Scheduler** — triggers autonomous background rescheduling and reminder
   escalation.
-- **Secret Manager** — secure storage of API keys and OAuth secrets in
-  production.
 
 ---
 
