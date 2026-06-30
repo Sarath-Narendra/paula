@@ -5,7 +5,7 @@
 
 **Deployed app (Google Cloud / Cloud Run):** https://paula-uvfakv267q-uc.a.run.app
 **GitHub repository:** https://github.com/Sarath-Narendra/paula
-**Demo video:** _<paste your YouTube (Unlisted) or Drive link here>_
+**Demo video:** _<https://drive.google.com/file/d/1nkLot7iPQwS8BizbsHVCRrl3jYTJZZiw/view?usp=sharing>_
 
 > Accessing the live app: sign-in uses Google OAuth with the Google Calendar
 > scope, so the app is in Google's "Testing" mode (required while the sensitive
